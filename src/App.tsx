@@ -59,7 +59,7 @@ const App: FunctionComponent = () => {
     }
     return () => (size.current = null);
   };
-  console.log(windowDimensions);
+  
   return (
     <div ref={size} className={`app__container-${windowDimensions?.size}`}>
       <Row className='app__row' gutter={windowDimensions?.gutter as number}>
